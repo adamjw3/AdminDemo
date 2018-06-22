@@ -1,0 +1,40 @@
+
+
+.contact {
+    padding-bottom: $unit-xlarge;
+}
+
+.headercontainer {
+    @include make-col-ready();
+    @include make-col(12);
+    margin-bottom: $unit-large;
+}
+
+.content {
+    @include make-col-ready();
+    @include make-col(12);
+
+    a {
+        @include font-roboto-regular;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+
+        &::after {
+            content: "";
+            background-color: blue;
+            bottom: 0;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+            transform-origin: 50% 50%;
+            transform: scaleX(0);
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }
+}

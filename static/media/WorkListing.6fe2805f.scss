@@ -1,0 +1,54 @@
+.worklisting {
+    padding-bottom: $unit-xlarge;
+}
+
+.headercontainer {
+    @include make-col-ready();
+    @include make-col(12);
+    margin-bottom: $unit-large;
+}
+
+.items {
+    @include make-col-ready();
+    @include make-col(12);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-basis: 100%;
+    padding-bottom: $unit-large;
+    width: auto;
+    cursor: pointer;
+
+    @include media-breakpoint-up(md) {
+        flex-basis: 45%;
+        padding-right: $unit;
+    }
+
+    &large {
+        @include media-breakpoint-up(md) {
+            flex-basis: 55%;
+        }
+    }
+}
+
+.itemimagecontainer {
+    margin-bottom: $unit-xsmall;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: $unit;
+    }
+}
+
+.itemimage {
+    @include vertical-center(absolute);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
