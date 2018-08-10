@@ -1,7 +1,3 @@
-![movie-site](https://user-images.githubusercontent.com/367147/43923188-f223a398-9c18-11e8-9569-6e589a19c3f6.png)
-
-Using React, Redux, reactstrap(bootstrap 4), and localstorage.
-
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
