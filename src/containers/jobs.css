@@ -1,0 +1,19 @@
+tr.row-complete {
+  background-color: rgba(245, 156, 0, 0.4)
+}
+
+tr.row-complete:hover td {
+  background-color: rgba(245, 156, 0, 0.5)
+}
+
+tr.row-active {
+  background-color: inherit;
+}
+
+tr.row-failed {
+  background-color: rgba(244, 4, 54, 0.4)
+}
+
+tr.row-failed:hover td {
+  background-color: rgba(244, 4, 54, 0.5)
+}

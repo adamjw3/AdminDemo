@@ -1,0 +1,44 @@
+tr.row-complete {
+  background-color: rgba(245, 156, 0, 0.4)
+}
+
+tr.row-complete:hover td {
+  background-color: rgba(245, 156, 0, 0.5)
+}
+
+tr.row-active {
+  background-color: inherit;
+}
+
+tr.row-failed {
+  background-color: rgba(244, 4, 54, 0.4)
+}
+
+tr.row-failed:hover td {
+  background-color: rgba(244, 4, 54, 0.5)
+}
+
+.table-link {
+  color: #1890ff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.table-link::after {
+  content: "";
+  background-color: #1890ff;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: transform 0.3s ease-in;
+  transform-origin: 0 50%;
+  transform: scaleX(1);
+  width: 100%
+}
+
+.table-link:hover::after {
+  transform: scaleX(0);
+}
