@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Filter from "../filter/Filter"
-import Search from "../search/Search";
+import SearchInput from "../input/SearchInput"
 import { Button } from "antd";
 
 let filters = [];
 let inputNames = [];
 
-class SearchAndFilters extends Component {
+class SearchBar extends Component {
 
   onChange = (name, value) => {
     if (!inputNames.includes(name)) {
@@ -29,10 +29,9 @@ class SearchAndFilters extends Component {
   };
 
   render() {
+    filters = [];
     
     if(this.props.filters) {
-      filters = [];
-      
       Object.entries(this.props.filters).forEach(filter => {
         filters.push(
           <Filter
@@ -51,7 +50,7 @@ class SearchAndFilters extends Component {
       <Fragment>
         {filters}
         <Button onClick={this.onReset} style={{ marginRight: "15px" }}>Reset Filters</Button>
-        <Search
+        <SearchInput
           onSearch={value => this.props.onSearch(value)}
           value={this.setVale(this.props.searchValue)}
           onChange={e => this.onChange("searchValue", e.target.value)}
@@ -62,8 +61,8 @@ class SearchAndFilters extends Component {
 }
 
 
-SearchAndFilters.propTypes = {
+SearchBar.propTypes = {
 
 };
 
-export default SearchAndFilters;
+export default SearchBar;

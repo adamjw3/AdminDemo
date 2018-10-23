@@ -3,7 +3,7 @@ import { Input } from 'antd';
 
 const SearchBox = Input.Search;
 
-const Search = ({...props}) => (
+const SearchInput = ({...props}) => (
  <SearchBox
   placeholder="Type Search"
   style={{ float: 'right', width: '40%' }}
@@ -14,4 +14,4 @@ const Search = ({...props}) => (
  />
 );
 
-export default Search;
+export default SearchInput;

@@ -15,7 +15,6 @@ import MenuToggle from "./components/menuToggle/MenuToggle";
 import MenuLogOut from "./components/menuLogOut/MenuLogOut";
 import WorkFlow from "./containers/WorkFlow";
 import SkyLogo from "./sky-logo.png";
-import Placeholder from './containers/Placeholder';
 import "./app.css"
 
 const { Header, Sider, Content } = Layout;
@@ -44,6 +43,10 @@ class App extends Component {
             collapsed={this.state.menuCollapsed}
             style={{ minHeight: "100vh" }}
           >
+            <div style={{ height: "64px", position: "relative", lineHeight: "64px", paddingLeft: "24px", background: "#002140", overflow: "hidden" }}>
+              <img src={SkyLogo} alt="sky" style={{ width: "34px", display: "inline-block" }} />
+              <h1 style={{ color: "#ffffff", display: "inline-block", verticalAlign: "sub", marginLeft: "15px", fontSize: "20px" }}>UHD VOD</h1>
+            </div>
             <Navigation />
           </Sider>
           <Layout>
@@ -71,7 +74,6 @@ class App extends Component {
               <Route exact path="/compliance" component={Compliance} />
               <Route exact path="/createTxMaster" component={CreateTxMaster} />
               <Route exact path="/inhouseTasks" component={InhouseTasks} />
-              <Route exact path="/placeholder/:id" component={Placeholder} />
             </Content>
           </Layout>
         </Layout>

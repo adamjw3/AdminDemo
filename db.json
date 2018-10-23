@@ -1170,21 +1170,73 @@
 		"Title": "Saw III",
 		"Type": "Movie",
 		"License": "Fox",
-		"Update Date": "29/09/2018 10:21"
+		"Update Date": "10/09/2018 10:21"
 	},
 	{
 		"id": "U123457",
 		"Title": "Saw II",
 		"Type": "Movie",
 		"License": "Fox",
-		"Update Date": "29/09/2018 10:21"
+		"Update Date": "01/09/2018 10:21"
 	},
 	{
 		"id": "U123458",
 		"Title": "Saw",
 		"Type": "Movie",
 		"License": "Fox",
-		"Update Date": "29/09/2018 10:21"
+		"Update Date": "26/09/2018 10:21"
+	}
+],
+"txmaster": [
+	{
+		"id": "U123458",
+		"title": "Saw II",
+		"hdr/sdr": "HDR",
+		"audio": "Atmos",
+		"framerate": "25",
+		"updatedatetime": "24/09/2018 10:21",
+		"process": "QC",
+		"status": "In Progress"
+	},
+	{
+		"id": "U123477",
+		"title": "Saw",
+		"hdr/sdr": "HDR",
+		"audio": "Atmos",
+		"framerate": "25",
+		"updatedatetime": "29/10/2018 10:21",
+		"process": "Video Arrived",
+		"status": "In Progress"
+	},
+	{
+		"id": "U123466",
+		"title": "Saw III",
+		"hdr/sdr": "HDR",
+		"audio": "Atmos",
+		"framerate": "25",
+		"updatedatetime": "29/09/2018 08:21",
+		"process": "Video Arrived",
+		"status": "In Progress"
+	},
+	{
+		"id": "U123459",
+		"title": "Saw I",
+		"hdr/sdr": "HDR",
+		"audio": "Atmos",
+		"framerate": "25",
+		"updatedatetime": "29/09/2018 09:21",
+		"process": "Video Arrived",
+		"status": "Failed"
+	},
+	{
+		"id": "U123450",
+		"title": "Saw I",
+		"hdr/sdr": "HDR",
+		"audio": "Atmos",
+		"framerate": "25",
+		"updatedatetime": "29/09/2018 09:21",
+		"process": "Video Arrived",
+		"status": "Complete"
 	}
 ]
 }

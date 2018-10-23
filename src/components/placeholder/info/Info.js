@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card } from 'antd';
-import "./placeholderinfo.css"
+import "./info.css"
 
-const PlaceholderInfo = ({ ...props }) => (
+const Info = ({ ...props }) => (
 	<Card title="Placeholder info" style={{ marginBottom: "15px" }}>
 		<dl className="inline-flex">
 			<dt>Title</dt>
@@ -25,4 +25,4 @@ const PlaceholderInfo = ({ ...props }) => (
 	</Card>
 );
 
-export default PlaceholderInfo;
+export default Info;

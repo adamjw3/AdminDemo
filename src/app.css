@@ -42,3 +42,40 @@ tr.row-failed:hover td {
 .table-link:hover::after {
   transform: scaleX(0);
 }
+
+.process-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative
+}
+
+
+.process-list__item {
+  margin-right: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.process-list__item:not(:last-of-type)::after {
+  content: "";
+  background-color: rgb(16, 142, 233);
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  width: 100%;
+}
+
+.process-list__item-title {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.process-list__item-progress {
+  background-color: #fbfbfb;
+}
+
+.ant-table-tbody > tr.ant-table-expanded-row:hover> td {
+  background-color: inherit!important;
+}

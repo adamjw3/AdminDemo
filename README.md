@@ -1,12 +1,3 @@
-App uses create react app, json-server, ant design
-
-install and run json-server https://github.com/typicode/json-server
-
-npm install -g json-server
-cd into root of app where db.json is and then run json-server --watch db.json
-
-Install and run create react app
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

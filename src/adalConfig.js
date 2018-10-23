@@ -1,11 +1,13 @@
 import { AuthenticationContext, adalFetch, withAdalLogin } from 'react-adal';
 
 export const adalConfig = {
-  tenant: '14d71d65-f596-4eae-be30-27f079bf8d4b',
-  clientId: '14d71d65-f596-4eae-be30-27f079bf8d4b',
+  tenant: '68b865d5-cf18-4b2b-82a4-a4eddb9c5237',
+  clientId: 'b606f7a4-9e82-4e2e-b495-c3b520dbf0c0',
   endpoints: {
-    api: '14d71d65-f596-4eae-be30-27f079bf8d4b',
+    api: '68b865d5-cf18-4b2b-82a4-a4eddb9c5237',
   },
+  postLogoutRedirectUri: window.location.origin,
+  redirectUri: 'http://localhost:3000/auth/openid/return',
   cacheLocation: 'localStorage',
 };
 

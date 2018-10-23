@@ -27,7 +27,7 @@ class Navigation extends Component {
 					</Link>
 				</Menu.Item>
 				<Menu.Item key="4">
-					<Link to="/achive">
+					<Link to="/archive">
 						<Icon type="file-done" />
 						<span>Archive</span>
 					</Link>
